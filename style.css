@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi-Regular.eot") format("opentype"),
+    url("./assets/fonts/Satoshi-Regular.ttf") format("truetype"),
+    url("./assets/fonts/Satoshi-Regular.woff") format("woff");
+url("./assets/fonts/Satoshi-Regular.woff2") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 6.75rem;
+    font-family: "Satoshi", sans-serif;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+p, a {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+a.active {
+    color: #fff;
+}
+
+a.active::before {
+    position: absolute;
+    content: url("./assets/vector.svg");
+    left: -1em;
+    line-height: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home {
+    height: 100vh;
+    background-image: url("./assets/hero.png");
+    background-size: cover;
+}
+
+.btn {
+    color: #fff;
+    border: none;
+}
+
+.btn-transparent {
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+.btn-dark {
+    background: rgba(55, 55, 55, 0.78);
+    font-size: 0.65rem;
+    padding: 1.5em 4em;
+    border-radius: 15em;
+}
+
+.langs button:first-child::before {
+    position: absolute;
+    content: "";
+    left: -1em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 50%;
+    background: #fff;
+}
+
+.cookies {
+    background: rgba(3, 3, 3, 0.4);
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
