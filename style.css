@@ -19,6 +19,30 @@ h1 {
     font-family: "Satoshi", sans-serif;
 }
 
+h2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 1em;
+}
+
+.mt-7 {
+    margin-top: 7em;
+}
+
+.mb-7 {
+    margin-bottom: 7em;
+}
+
+h3 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.875rem;
+}
+
+section {
+    background: #000;
+}
+
 a {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
@@ -40,13 +64,17 @@ a.active {
     color: #fff;
 }
 
-a.active::before {
+a.active::before, h2::before {
     position: absolute;
     content: url("./assets/vector.svg");
     left: -1em;
     line-height: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+h2::before {
+    left: 0;
 }
 
 .home {
@@ -87,8 +115,20 @@ a.active::before {
     background: rgba(3, 3, 3, 0.4);
 }
 
+.project p {
+    color: rgba(255, 255, 255, 0.24);
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        margin-top: 0;
+        margin-bottom: 5em;
+    }
+}
+
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 4rem;
     }
 }
+
