@@ -43,6 +43,10 @@ h3 {
     font-size: 1.875rem;
 }
 
+h4 {
+    font-size: 3.125rem;
+}
+
 main {
     background: #000;
 }
@@ -57,6 +61,10 @@ a {
 p {
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
+}
+
+span {
+    font-size: 0.75rem;
 }
 
 p, a {
@@ -109,7 +117,7 @@ a.active::before, .heading::before {
     border-radius: 15em;
 }
 
-.langs button:first-child::before {
+.social-media a:first-child::before {
     position: absolute;
     content: "";
     left: -1em;
@@ -171,7 +179,7 @@ a.active::before, .heading::before {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.feature p, .about p{
+.feature p, .about p {
     font-size: 2rem;
     color: #fff;
 }
@@ -188,9 +196,65 @@ a.active::before, .heading::before {
     font-size: 0.75rem;
 }
 
-.about h2:not(.heading) {
+.about h3, .our-team h3 {
     font-size: 5rem;
     margin-bottom: 3em;
+    color: #fff;
+}
+
+.our-team h3 {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.our-team h3:nth-child(2) {
+    text-indent: 1.1em;
+}
+
+.team-member span {
+    bottom: -3em;
+    left: 2em;
+}
+
+.team-member a {
+    padding: 0;
+    text-transform: none;
+}
+
+.team-member h4 {
+    top: 45%;
+    transform: translateY(-40%);
+    left: 90%;
+}
+
+.team-member .circle {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid rgba(255, 255, 255, 30%);
+    border-radius: 100%;
+    position: relative;
+}
+
+.team-member .circle:before, .team-member .circle-plus:after {
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    width: 1.5rem;
+    height: 1px;
+    background: #14DA3C;
+}
+
+.team-member .circle-plus:after {
+    width: 1px;
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .our-team h3:nth-child(2) {
+        text-indent: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -205,8 +269,14 @@ a.active::before, .heading::before {
         font-size: 4rem;
     }
 
-    .about h2:not(.heading) {
+    .about h3, .our-team h3 {
         font-size: 2.5rem;
+    }
+
+    .team-member h4 {
+        top: 80%;
+        transform: translateY(-40%);
+        left: 50%;
     }
 }
 
