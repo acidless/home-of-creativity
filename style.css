@@ -45,6 +45,7 @@ h3 {
 
 h4 {
     font-size: 3.125rem;
+    font-weight: 300;
 }
 
 main {
@@ -56,6 +57,11 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+}
+
+a.btn {
+    padding: 0;
+    text-transform: none;
 }
 
 p {
@@ -216,11 +222,6 @@ a.active::before, .heading::before {
     left: 2em;
 }
 
-.team-member a {
-    padding: 0;
-    text-transform: none;
-}
-
 .team-member h4 {
     top: 45%;
     transform: translateY(-40%);
@@ -249,6 +250,14 @@ a.active::before, .heading::before {
 .team-member .circle-plus:after {
     width: 1px;
     height: 1.5rem;
+}
+
+.social-media-bottom a {
+    text-transform: none;
+}
+
+footer span {
+    color: #1CAA39;
 }
 
 @media screen and (max-width: 992px) {
