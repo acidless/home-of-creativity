@@ -27,6 +27,7 @@ h2 {
 .heading {
     position: relative;
     padding-left: 1em;
+    margin-bottom: 0;
 }
 
 .mt-7 {
@@ -42,7 +43,7 @@ h3 {
     font-size: 1.875rem;
 }
 
-section {
+main {
     background: #000;
 }
 
@@ -132,13 +133,13 @@ a.active::before, .heading::before {
     color: #fff;
 }
 
-.sponsors button {
+.btn-circle {
     font-size: 0.875rem;
     position: relative;
     padding-left: 1.75em;
 }
 
-.sponsors button::before {
+.btn-circle::before {
     content: "";
     width: 1em;
     height: 1em;
@@ -166,13 +167,16 @@ a.active::before, .heading::before {
     font-weight: 300;
 }
 
-.feature{
+.feature {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.feature p {
+.feature p, .about p{
     font-size: 2rem;
     color: #fff;
+}
+
+.feature p {
     text-indent: 1.5em;
 }
 
@@ -182,6 +186,11 @@ a.active::before, .heading::before {
     top: 1.5em;
     font-weight: 300;
     font-size: 0.75rem;
+}
+
+.about h2:not(.heading) {
+    font-size: 5rem;
+    margin-bottom: 3em;
 }
 
 @media screen and (max-width: 768px) {
@@ -194,6 +203,10 @@ a.active::before, .heading::before {
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 4rem;
+    }
+
+    .about h2:not(.heading) {
+        font-size: 2.5rem;
     }
 }
 
