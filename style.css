@@ -50,6 +50,7 @@ h4 {
 
 main {
     background: #000;
+    overflow: hidden;
 }
 
 a {
@@ -165,7 +166,7 @@ a.active::before, .heading::before {
     border-radius: 100%;
 }
 
-.sponsors .blur {
+.blur {
     height: 5em;
     width: 50em;
     background: #14DA3C;
@@ -174,6 +175,24 @@ a.active::before, .heading::before {
     top: 50%;
     transform: translateY(-50%) rotateZ(50deg);
     filter: blur(8em);
+}
+
+.manifesto .blur, .contact .blur {
+    left: auto;
+    top: auto;
+    bottom: 0;
+    transform: rotateZ(-50deg);
+    right: -10em;
+}
+
+.contact .blur {
+    transform: rotateZ(50deg);
+    right: -20em;
+}
+
+.our-team .blur {
+    top: 0;
+    left: -20em;
 }
 
 .manifesto p {
